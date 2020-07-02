@@ -88,7 +88,7 @@ section {
         }
     }
 }
-.content-wrap #john {
+.content-wrap #tanya {
     display: none;
 }
 .attribution {
@@ -100,14 +100,17 @@ section {
     text-align: center;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
     .text {
         top: 55%;
         left: 50%;
         transform: translate(-50%, 0);
         text-align: center;
+        background-position-x: 50%;
+        background-position-y: 35%;
+        background-size: 2em;
         p {
-            font-size: $body-font / 2;
+            font-size: $body-font / 1.5;
         }
     }
     .img {
@@ -120,5 +123,21 @@ section {
             height: $img-size / 2;
             width: $img-size / 2;
         }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .text {
+        width: 80%;
+        h1, h2 {
+            display: block;
+            font-size: $body-font / 2;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+    }
+    .attribution {
+        width: 90%;
     }
 }
